@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Signika Negative", serif;
+    font-weight: 400;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(45,51,56,1) 50%, rgba(16,24,32,1) 80%);
+    color: #fff;
+}
+
+.container {
+    
+    max-width: 1080px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px 40px 40px 40px;
+}
+
+.formulario-tabela {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 140px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+
+    background-image: linear-gradient(46deg, #d869aa 10%, #37b9a8 40%, #1a2f90 88%);
+    background-clip: text;
+    color: transparent;
+
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+
+/*FORM*/
+
+
+form {
+    max-width: 300px;
+    width: 100%;
+    height: 380px;
+
+    display: block;
+    margin-bottom: 40px;
+
+    border: 2px solid rgba(240, 46, 170, 0.4);
+    border-radius: 20px;
+    padding: 25px;
+    
+    background-color: #d869aa1e;
+
+    transition: 0.3s;
+}
+
+form:hover {
+    background-color: #d869aa38;
+}
+
+form h2 {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+    text-align: center;
+
+    background-color: #ffffffbd;
+
+    border: none;
+    outline: none;
+    border-radius: 40px;
+
+    transition: 0.3s;
+}
+
+form input:hover, form input:focus {
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+form input:focus {
+    box-shadow: rgba(240, 46, 169, 0.541) 0px 5px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    
+    margin-left: 75px;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    border: none;
+    border-radius: 40px;
+
+    background-image: linear-gradient(46deg, #d869aa 10%, #37b9a8 40%, #1a2f90 88%);
+    color: rgba(255, 255, 255, 0.5);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.685);
+}
+
+form p {
+    display: none;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    background-color: #37b98e;
+    border-radius: 20px;
+}
+
+
+
+/*TABLE*/
+.lista {
+    padding: 25px;
+    height: 100%;
+
+    border: 2px solid #1a2f90;
+    background-color: #1a30901c;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.lista:hover {
+    background-color: #1a309038;
+}
+
+.lista h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    cursor: default;
+}
+
+table {
+    padding: 20px;
+    height: 290px;
+
+    max-width: 512px;
+    text-align: start;
+    
+    cursor: default;
+}
+
+table thead tr th{
+    padding: 10px 20px 20px 20px;
+    text-align: initial;
+    font-size: 22px;
+    font-weight: 800;
+    border-bottom: 2px solid #fff;
+    cursor: default;
+}
+
+table tbody tr td {
+    padding: 15px 20px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+.numero-lista {
+    cursor: text;
+}
+
+table tbody tr td i {
+    font-size: 20px;
+    font-weight: 800;
+    cursor: default;
+}
+
+table tfoot tr td {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #37b9a8;
+    border-top: 2px solid #fff;
+    cursor: default;
+}
