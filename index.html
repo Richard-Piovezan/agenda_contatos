@@ -20,8 +20,9 @@
         <div class="formulario-tabela">
             <form id="form-novo-contato">
                 <h2>Novo Contato:</h2>
-                <input type="text" id="nome-contato" placeholder="Nome do contato" required>
-                <input type="number" id="numero-contato" placeholder="Número do contato" minlength="1" maxlength="14" required>
+                <input type="text" id="nome-contato" minlength="2" maxlength="23" placeholder="Nome do contato" required>
+                <input type="tel" id="ddd-contato" minlength="2" maxlength="2"  placeholder="DDD" required>
+                <input type="tel" id="numero-contato" minlength="8" maxlength="9" placeholder="Número do contato" required>
                 <button type="submit">+</button>
                 <p id="mensagem-sucesso">Contato adicionado!</p>
             </form>
@@ -32,6 +33,7 @@
                     <thead>
                         <tr class="table-head">
                             <th>Nome do contato</th>
+                            <th>DDD</th>
                             <th>Número do contato</th>
                         </tr>
                     </thead>
@@ -42,6 +44,7 @@
                     <tfoot>
                         <tr>
                             <td>Quantidade:</td>
+                            <td></td>
                             <td id="quantidade-contatos">0</td>
                         </tr>
                     </tfoot>

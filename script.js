@@ -15,6 +15,7 @@ form.addEventListener('submit', function(e) {
 
 function adicionaContato() {
     const nomeNovo = document.getElementById('nome-contato')
+    const dddNovo = document.getElementById('ddd-contato')
     const numeroNovo = document.getElementById('numero-contato')
 
     if (numeros.includes(numeroNovo.value)) {
@@ -27,6 +28,7 @@ function adicionaContato() {
 
         let linha = `<tr>`
         linha += `<td><i class='bx bx-user' style='color:#37b9a8'></i> ${nomeNovo.value}</td>`
+        linha += `<td class="numero-lista"><i class='bx bx-plus' style='color:#37b9a8'></i> ${dddNovo.value}</td>`
         linha += `<td class="numero-lista"><i class='bx bx-phone' style='color:#37b9a8'></i> ${numeroNovo.value}</td>`
         linha += `</tr>`
 
@@ -36,6 +38,7 @@ function adicionaContato() {
     }
 
     nomeNovo.value = ''
+    dddNovo.value = ''
     numeroNovo.value = ''
 }
 
@@ -47,6 +50,10 @@ function atualizaAgenda() {
 }
 
 document.getElementById('nome-contato').addEventListener('input', function() {
+    mensagemSucesso.style.display = 'none'
+})
+
+document.getElementById('ddd-contato').addEventListener('input', function() {
     mensagemSucesso.style.display = 'none'
 })
 
